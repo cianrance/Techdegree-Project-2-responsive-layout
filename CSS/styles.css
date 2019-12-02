@@ -269,12 +269,3 @@ address {
   }
 
 }
-
-
-
-/* Clearfix hack */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
