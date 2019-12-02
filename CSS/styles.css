@@ -145,18 +145,8 @@ footer {
     width: 50%;
     float: left;
     padding: 0em 0.5em;
-    min-height: 330px;
+    min-height: 340px;
   }
-
-
-
-
-
-
-
-
-
-
 
   /* Clearfix hack */
   .clearfix::after {
@@ -167,6 +157,29 @@ footer {
 
 }
 
+@media (min-width: 1024px) {
+
+  .wrapper {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .portfolio-item,
+  .skills-item {
+    display: inline-block;
+    width: 33%;
+    float: left;
+    padding: 0em 0.5em;
+  }
+
+  /* Clearfix hack */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
 
 
 
