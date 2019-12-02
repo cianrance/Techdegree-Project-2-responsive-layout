@@ -15,7 +15,8 @@ a {
 }
 
 ul,
-p {
+p,
+address {
   font-family: 'Muli', sans-serif;
   color: #111111;
 }
@@ -48,6 +49,14 @@ p {
   margin-bottom: 1em;
 }
 
+address {
+  font-style: normal;
+}
+
+address a {
+  font-weight: 700;
+}
+
 footer {
   background: #e6e6e6;
   text-align: center;
@@ -60,6 +69,10 @@ img {
 
 footer {
   padding: 2em 0;
+}
+
+address {
+  padding-bottom: 1em;
 }
 
 .main-header {
@@ -131,12 +144,45 @@ footer {
   margin: auto;
 }
 
+.footer-nav {
+  display: none;
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
 
+  header {
+    width: 95%;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .nav li a {
+    width: 100%;
+    font-size: 1.4em;
+  }
+
   .wrapper {
     width: 95%;
+  }
+
+  .profile-img {
+    float: right;
+    width: 40%;
+    margin: 0;
+  }
+
+  .main-header p {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0));
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding: 1em;
+    text-align: left;
+    font-size: 1.3em;
   }
 
   .portfolio-item,
@@ -146,6 +192,43 @@ footer {
     float: left;
     padding: 0em 0.5em;
     min-height: 340px;
+  }
+
+  .contact {
+    width: 70%;
+    margin: auto;
+  }
+
+  .footer-nav-mobile {
+    display: none;
+  }
+
+  .main-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .footer-nav {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    padding: 1em 0;
+    border-top: 1px solid #111111;
+  }
+  .main-nav h1 {
+    margin: 0 0 1em 0;
+  }
+
+  .main-nav h1,
+  .footer-nav h2 {
+    display: inline-block;
+    float: left;
+  }
+
+  .main-nav ul,
+  .footer-nav ul {
+    display: inline-block;
+    float: right;
   }
 
   /* Clearfix hack */
@@ -161,6 +244,12 @@ footer {
 
   .wrapper {
     width: 90%;
+    max-width: 1200px;
+  }
+
+  .main-nav,
+  header {
+    margin-top: 2em;
     max-width: 1200px;
   }
 
